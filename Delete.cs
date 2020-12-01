@@ -6,21 +6,18 @@ using System.Collections.Generic;
 namespace guestbook
 {
     public class Delete
-    {
-
-        
-        FileControl serialize = new FileControl(); // instansiate class
-        Menu menu = new Menu();
-        GuestPosts GuestPosts = new GuestPosts();
+    {        
+        FileControl serialize = new FileControl(); // instansiate class Filecontrol
+        Menu menu = new Menu(); // instansiate class Menu
         
         public void deletePost()
         {
-            bool delControl = true; // 
+            bool delControl = true; 
             while(delControl) // while delControl is true, loop 
             {
                 menu.WriteTitle();
                 menu.ReadPosts();
-                Delete delete = new Delete();
+
 
                 // deserialize json-data to list
                 serialize.Deserialize(out string jsonData, out List<GuestPosts> userPosts);
@@ -48,14 +45,14 @@ namespace guestbook
                         ForegroundColor = System.ConsoleColor.DarkCyan;
                         WriteLine("\nInlägget har raderats!\n");
                         menu.ReadPosts();
-                        delControl = false;
+                        delControl = false; // get out of loop and quit
                     }
                     else
                     {
                         Clear();
                         ForegroundColor = System.ConsoleColor.DarkCyan;
                         WriteLine("\nHej då! Välkommen tillbaka!\n");
-                        delControl = false;
+                        delControl = false; // get out of loop and quit
                     }
                    
                 }
@@ -70,12 +67,8 @@ namespace guestbook
                     Clear();
                     ForegroundColor = System.ConsoleColor.DarkRed;
                     WriteLine("Du måste ange en siffra. Försök igen");
-                }
-                
+                }      
             }
-            
-           
-            
         }
     }
 }
