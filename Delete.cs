@@ -69,7 +69,7 @@ namespace guestbook
                 {
                     Clear();
                     ForegroundColor = System.ConsoleColor.DarkRed;
-                    WriteLine("Du måste ange ett nummer som finns i listan. Försök igen");
+                    WriteLine("Du måste ange en siffra. Försök igen");
                 }
                 
             }
