@@ -1,5 +1,7 @@
 # Konsollgästbok i c#
 
-#### Jag har skapat en gästbok för konsollen i c#
+### Uppgift i kursen DT071G - Programmering i c#.NET
 
-#### Det går att läsa inlägg, skriva nya inlägg och radera inlägg.
+#### Jag har skapat en objektorienterad gästbok för konsoll.
+
+#### Det går att läsa, skriva och radera inlägg.
